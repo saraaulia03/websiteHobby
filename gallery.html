@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling khusus galeri agar foto lebih menonjol */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 1.5rem;
+        }
+        .gallery-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item .caption {
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sarah's Website</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="hobbi.html">Hobi</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contactme.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Rubik's Cube Gallery</h2>
+        <p style="margin-top: 0.5rem; color: #666;"></p>
+        <br>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="rubik4.jpeg" alt="Rubik 4">
+            </div>
+
+            <div class="gallery-item">
+                <img src="rubik5.jpeg" alt="Rubik 5">
+            </div>
+
+            <div class="gallery-item">
+                <img src="rubik7.jpeg" alt="Rubik 6">
+            </div>
+        </div>
+            <br>
+            <br>
+        <div class="gallery-description">
+    <p>
+      Ini adalah koleksi rubik yang aku miliki. sebenernya sih aku punya 4 cuma yang dua lagi gaktau kemana, yang 1 rubik 3x3 yang 1 nya lagi 4x4. 
+    </p>
+  </div>
+  <a href="contactme.html" class="btn">Send Your Letter</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Personal Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
